@@ -1,7 +1,8 @@
 ## Information-Coupled Neural Operator for Computational Mechanics and Parametric PDEs （CMAME）
 
 <p align="center">
-  <img src="ICNO.wbep"
+  <img src="ICNO.webp"
        style="width:100%; height:300px; object-fit:cover;">
 </p>
+
 
