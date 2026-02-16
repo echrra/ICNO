@@ -2,7 +2,8 @@
 
 <p align="center">
   <img src="ICNO.webp"
-       style="width:100%; height:300px; object-fit:cover;">
+       style="width:100%;  object-fit:cover;">
 </p>
+
 
 
