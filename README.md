@@ -26,7 +26,7 @@ Information-Coupled Neural Operator for Computational Mechanics and Parametric P
 ## Showcases
 <p align="center">
   <img src="pic/show.webp"
-       style="width:80%;  object-fit:cover;">
+       style="width:93%;  object-fit:cover;">
 <br><br>
 <b>Figure 3.</b> Visualization of the ERA5 2-meter air temperature prediction results.
 </p>
