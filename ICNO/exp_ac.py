@@ -6,15 +6,15 @@ import numpy as np
 import scipy.io as scio
 import time
 
-parser = argparse.ArgumentParser('Training Transolver')
+parser = argparse.ArgumentParser('Training ICNO')
 
 parser.add_argument('--lr', type=float, default=1e-3)
 parser.add_argument('--epochs', type=int, default=500)
 parser.add_argument('--weight_decay', type=float, default=1e-5)
-parser.add_argument('--model', type=str, default='Transolver_Structured_Mesh_2D')
-parser.add_argument('--n-hidden', type=int, default=64, help='hidden dim') #128
+parser.add_argument('--model', type=str, default='ICNO_Structured_Mesh_2D')
+parser.add_argument('--n-hidden', type=int, default=64, help='hidden dim') 
 parser.add_argument('--n-layers', type=int, default=8, help='layers')
-parser.add_argument('--batch-size', type=int, default=8)#4
+parser.add_argument('--batch-size', type=int, default=8)
 parser.add_argument("--gpu", type=str, default='7', help="GPU index to use")
 parser.add_argument('--max_grad_norm', type=float, default=0.1)
 parser.add_argument('--downsample', type=int, default=1)
