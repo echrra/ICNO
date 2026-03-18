@@ -1,5 +1,5 @@
 # ICNO （CMAME 2026）
-Information-Coupled Neural Operator for Computational Mechanics and Parametric PDEs[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0045782526001258)
+Information-Coupled Neural Operator for Computational Mechanics and Parametric PDEs. [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0045782526001258)
 
 
 **The main contributions of ICNO are threefold:**
