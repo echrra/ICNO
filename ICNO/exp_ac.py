@@ -154,41 +154,49 @@ def main():
                 tl = myloss(out, y).item()
                 rel_err += tl
 
-                # if id < showcase:
-                    # print(id)
-                    # plt.figure()
-                    # plt.axis('off')
-                    # plt.imshow(out[0, :].reshape(s, s).detach().cpu().numpy(), cmap='coolwarm')
-                    # plt.colorbar()
-                    # plt.savefig(
-                    #     os.path.join('./results/' + save_name + '/',
-                    #                 "case_" + str(id) + "_pred.pdf"))
-                    # plt.close()
-                    # # ============ #
-                    # plt.figure()
-                    # plt.axis('off')
-                    # plt.imshow(y[0, :].reshape(s, s).detach().cpu().numpy(), cmap='coolwarm')
-                    # plt.colorbar()
-                    # plt.savefig(
-                    #     os.path.join('./results/' + save_name + '/', "case_" + str(id) + "_gt.pdf"))
-                    # plt.close()
-                    # # ============ #
-                    # plt.figure()
-                    # plt.axis('off')
-                    # plt.imshow((y[0, :] - out[0, :]).reshape(s, s).detach().cpu().numpy(), cmap='coolwarm')
-                    # plt.colorbar()
-                    # plt.clim(-0.0005, 0.0005)
-                    # plt.savefig(
-                    #     os.path.join('./results/' + save_name + '/', "case_" + str(id) + "_error.pdf"))
-                    # plt.close()
-                    # # ============ #
-                    # plt.figure()
-                    # plt.axis('off')
-                    # plt.imshow((fx[0, :].unsqueeze(-1)).reshape(s, s).detach().cpu().numpy(), cmap='coolwarm')
-                    # plt.colorbar()
-                    # plt.savefig(
-                    #     os.path.join('./results/' + save_name + '/', "case_" + str(id) + "_input.pdf"))
-                    # plt.close()
+                # if id < 2:
+                #     plt.rcParams["font.family"] = "Serif"
+                #     plt.rcParams['font.size'] = 14
+
+                #     figure1 = plt.figure(figsize=(18, 14))
+                #     figure1.text(0.08, 0.17, '\n Error', rotation=90, color='purple', fontsize=20)
+                #     figure1.text(0.08, 0.34, '\n Prediction', rotation=90, color='green', fontsize=20)
+                #     figure1.text(0.08, 0.52, '\n Ground Truth', rotation=90, color='red', fontsize=20)
+                #     figure1.text(0.08, 0.774, '\n Input', rotation=90, color='b', fontsize=20)
+                #     plt.subplots_adjust(wspace=0.7)
+
+                #     index = 0
+                #     for ids in range(4):  # you can replace batch_size with actual number of samples
+                        
+                #         # INPUT
+                #         plt.subplot(4, 4, index + 1)
+                #         plt.imshow(fx[ids, :].reshape(s, s).detach().cpu().numpy(), cmap='turbo', interpolation='Gaussian')
+                #         plt.title(f'Case-{ids+1}', color='b', fontsize=18, fontweight='bold')
+                #         plt.axis('off')
+                        
+                #         # GROUND TRUTH
+                #         plt.subplot(4, 4, index + 1 + 4)
+                #         plt.imshow(y[ids, :].reshape(s, s).detach().cpu().numpy(), cmap='turbo', interpolation='Gaussian')
+                #         plt.colorbar(fraction=0.045)
+                #         plt.axis('off')
+
+                #         # PREDICTION
+                #         plt.subplot(4, 4, index + 1 + 8)
+                #         plt.imshow(out[ids, :].reshape(s, s).detach().cpu().numpy(), cmap='turbo', interpolation='Gaussian')
+                #         plt.colorbar(fraction=0.045)
+                #         plt.axis('off')
+
+                #         # ERROR
+                #         plt.subplot(4, 4, index + 1 + 12)
+                #         plt.imshow(np.abs((y[ids, :] - out[ids, :]).reshape(s, s).detach().cpu().numpy()), cmap='jet', interpolation='Gaussian')
+                #         plt.colorbar(fraction=0.045, format='%.0e')
+                #         # plt.clim(0, 0.05)
+                #         plt.axis('off')
+
+                #         index += 1
+
+                #     plt.savefig(os.path.join('./results/' + save_name + '/', 'ac_summary.pdf'), bbox_inches='tight')
+                #     plt.close()
                 
 
 
