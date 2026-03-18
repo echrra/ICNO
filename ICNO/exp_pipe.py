@@ -118,7 +118,7 @@ def main():
     # print(model)
     count_parameters(model)
     with open(loss_log_file, "a") as f:  
-        f.write("参数量：{}\n".format(count_parameters(model))) 
+        f.write("parameter:{}\n".format(count_parameters(model))) 
 
     scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=args.lr, epochs=args.epochs,
                                                     steps_per_epoch=len(train_loader))
