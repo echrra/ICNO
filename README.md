@@ -28,7 +28,7 @@ The main contributions of ICNO are threefold:
   <img src="pic/show.webp"
        style="width:80%;  object-fit:cover;">
 <br><br>
-<b>Figure 3.</b> Visualization of the **ERA5 2-meter air temperature** prediction results.
+<b>Figure 3.</b> Visualization of the ERA5 2-meter air temperature prediction results.
 </p>
 
 ## Citation
