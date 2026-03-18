@@ -158,7 +158,7 @@ def main():
                 #     plt.subplots_adjust(wspace=0.7, hspace=0.4)
 
                 #     index = 0
-                #     for ids in range(4):  # 可根据需要调整展示样本数
+                #     for ids in range(4):  
                 #         x_coord = x[ids, :, 0].reshape(129, 129).detach().cpu().numpy()
                 #         y_coord = x[ids, :, 1].reshape(129, 129).detach().cpu().numpy()
                 #         input_field = np.full_like(x_coord, 0.4)
