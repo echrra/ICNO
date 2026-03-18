@@ -2,7 +2,7 @@
 Information-Coupled Neural Operator for Computational Mechanics and Parametric PDEs[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0045782526001258)
 
 
-The main contributions of ICNO are threefold:
+**The main contributions of ICNO are threefold:**
 
 - We elaborate an efficient Cross-frequency Fourier Attention mechanism that couples multi-scale information in the Wavelet domain. The proposal simultaneously reduces spatial and temporal complexities, delivering superior efficacy and efficiency compared to current methods.
 - We present a wavelet block to separate and reconstruct information components, along with an interleaved module to balance global-local information. By coupling spectral learning with attention computation, the method is able to capture a richer set of spectral-spatial features.
